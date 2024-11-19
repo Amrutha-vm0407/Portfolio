@@ -625,7 +625,7 @@ h3.my-profession {
     grid-template-columns: repeat(6, 1fr);
     flex-wrap: wrap;
     gap: 3rem;
-    left:5rem;
+   
   }
   .skills .container .bar {
     margin-bottom: 15px;
