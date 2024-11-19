@@ -362,6 +362,7 @@ h3.my-profession {
     margin: auto;
     border-radius: 5px;
     height: 400px;
+  
 }
 
 .home .home-img::after {
@@ -854,7 +855,7 @@ border:0.2rem solid var(--skin-color);
     line-height: 25px;
     color: var(--text-black-700);
     font-weight: 300;
-    display: flex;
+    
 }
 
 .contact .contact-form {
@@ -955,7 +956,7 @@ border:0.2rem solid var(--skin-color);
         width: 100%;
         height: 100%;
         max-width: max-content;
-        border-radius: 50%;
+        border-radius: 100%;
         padding: 5px;
         padding-left: 200px;
         margin: 10px;
@@ -971,7 +972,7 @@ border:0.2rem solid var(--skin-color);
         width: 100%;
         height: 100%;
         max-width: max-content;
-        border-radius: 50%;
+        border-radius: 100%;
         padding: 5px;
         margin: 10px;
         background-color: var(--skin-color);
@@ -1028,14 +1029,20 @@ border:0.2rem solid var(--skin-color);
 @media (min-width: 1187px) {
     .mobile-tablet-image {
        display: none;
+      
     }
  }
  
  /* For tablet and mobile devices */
  @media (max-width: 1187px) {
     .desktop-laptop-image {
-       display: none;
+       display: none;  
     }
+    .home .home-img img {
+        border-radius: 100%;
+    }
+
+   
  }
 
 
