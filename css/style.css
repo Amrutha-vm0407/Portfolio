@@ -902,6 +902,7 @@ border:0.2rem solid var(--skin-color);
 .contact .contact-form .btn {
     height: 50px;
     padding: 0 50px;
+    
 }
 
 @media (max-width:1199px) {
