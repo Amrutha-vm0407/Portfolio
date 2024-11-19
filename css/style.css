@@ -22,7 +22,7 @@ body.dark {
 body {
     line-height: 1.5;
     font-size: 18px;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins';
 }
 
 * {
@@ -201,7 +201,7 @@ ul {
 }
 
 .aside .logo a span {
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins';
 
     font-size: 40px;
 }
@@ -599,41 +599,35 @@ h3.my-profession {
 }
 
 .skills {
-    min-height: 100vh;
-   
+    min-height: 90vh;
+    
   }
-  .skills h2 {
-    color: #fff;
-  }
-  .skills .heading  {
-    margin-left:200px;
-   margin-top: 20px;
   
-    color: rgb(255, 230, 0);
-  }
   .skills .container {
     color:var(--skin-color);
     border-radius: 1rem;
     padding: 2rem;
-
     margin: auto;
-    margin-top: 2rem;
-    cursor: pointer;
+    width:90%;
+    margin-top:2rem;
   }
   .skills .container .row {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
     flex-wrap: wrap;
-    gap: 3rem;
-   
+    
   }
   .skills .container .bar {
-    margin-bottom: 15px;
-    padding: 10px;
+    margin-bottom: 5px;
+    padding: 3px;
     border-radius: 1rem;
     border: 1px solid rgb(101, 100, 100);
-    
-
+    /* box-shadow */
+  }
+  .skills .container .bar:hover {
+    box-shadow: 0 8px 10px var(--skin-color) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
   }
  
   .skills .container .bar .info {
@@ -648,7 +642,7 @@ h3.my-profession {
   }
   .skills .container .bar .info span {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 300;
     font-family: 'Poppins';
     margin-left: 0.5rem;
   }
@@ -661,31 +655,26 @@ h3.my-profession {
       
     }
     .skills .container .row {
-      grid-template-columns: repeat(2, 1fr);
-      margin: 1rem;
-      padding: 2rem 0.2rem 2rem 0.2rem;
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0.3rem;
+      padding: 1rem 0.1rem 1rem 0.1rem;
       gap: 1rem;
       
     }
     .skills .container {
-      margin-top: 5px;
+      margin-top: 3px;
       width: 100%;
      
     }
   }
-  .skills .container .bar:hover {
-    box-shadow: 0 8px 10px var(--skin-color) !important;
-    background-color: rgba(0, 0, 0, 0.9) !important;
-  }
+ 
 
 /* Services */
-.service .container {
-    margin-left: 90px;
-  }
-  #service .row{
-      margin-left: 100px;
+ .service .container {
+    padding-bottom: 40px;
   }
   
+  /*
   .service .service-item {
       margin-bottom: 30px;
       flex: 0 0 33.33%;
@@ -754,7 +743,7 @@ h3.my-profession {
       font-size: 16px;
       color: var(--text-black-700);
       line-height: 25px;
-  }
+  } */
 
 /* Portfolio */
 .portfolio .portfolio-heading {
@@ -770,9 +759,11 @@ h3.my-profession {
 
 .portfolio .portfolio-item {
     display: inline-flex;
-       max-width: 50%;
+       max-width: 100%;
  margin-bottom: 10px;
     margin-right: 10px;
+    
+        
    
 }
 
@@ -783,13 +774,13 @@ h3.my-profession {
     overflow: hidden;
     cursor: pointer;
     width:30rem;
-    height:15rem;
+    height:18rem;
     
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
-    display: block;
+    display:flex;
    
 }
 .viewprojects{
@@ -797,7 +788,6 @@ h3.my-profession {
     color:white;
   height:5rem; 
   position: relative;
-  line-height: 0;
   padding: 1rem 1rem;
   border-radius: 0.5em;
   font-weight: 700;
@@ -832,10 +822,12 @@ border:0.2rem solid var(--skin-color);
     max-width: 25%;
     text-align: center;
     margin-bottom: 60px;
+    
 }
 
 .contact .contact-info-item .icon {
     display: inline-block;
+    
 }
 
 .contact .contact-info-item .icon .fa {
@@ -845,6 +837,7 @@ border:0.2rem solid var(--skin-color);
 .contact .contact-info-item .icon .fab{
     font-size: 25px;
     color: var(--skin-color);
+    
 }
 
 .contact .contact-info-item h4 {
@@ -853,13 +846,15 @@ border:0.2rem solid var(--skin-color);
     color: var(--text-black-900);
     text-transform: capitalize;
     margin: 15px 0 15px;
+   
 }
 
 .contact .contact-info-item p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 25px;
     color: var(--text-black-700);
-    font-weight: 400;
+    font-weight: 300;
+    display: flex;
 }
 
 .contact .contact-form {
@@ -948,7 +943,7 @@ border:0.2rem solid var(--skin-color);
 
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item,
+    .service .skills,
     .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
@@ -984,7 +979,7 @@ border:0.2rem solid var(--skin-color);
 }
 
 @media (max-width:767px) {
-    .service .service-item,
+    .service .skills,
     .contact .contact-form .col-6,
     .contact .contact-form .col-12,
     .contact .contact-info-item,
@@ -1005,7 +1000,7 @@ border:0.2rem solid var(--skin-color);
     .portfolio,
     .contact {
         margin-left: -20px;
-        font-family: 'Poppins' sans-serif;
+        font-family: 'Poppins' ;
     }
 }
 
@@ -1082,6 +1077,19 @@ border:0.2rem solid var(--skin-color);
     top: 25%;
 
 }
-#message{
-    font-family: Arial, Helvetica, sans-serif;
+#name{
+    font-family: 'Poppins';
 }
+#email{
+    font-family: 'Poppins';
+}
+#subject{
+    font-family: 'Poppins';
+}
+#message{
+    font-family: 'Poppins';
+}
+.btn{
+    font-family: 'Poppins'  
+}
+
