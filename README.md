@@ -3,7 +3,7 @@ You can see the live demo of our website here <br>
 https://jazzy-marzipan-94f2aa.netlify.app/
 
 
-# Responsive Portfolio Website HTML
+# Responsive Portfolio Website
 
 - Responsive Personal Portfolio Website Using HTML CSS & JavaScript
 - Smooth scrolling in each section.
