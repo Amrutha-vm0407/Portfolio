@@ -15,7 +15,7 @@ https://jazzy-marzipan-94f2aa.netlify.app/
 <img src="https://github.com/Amrutha-vm0407/Portfolio/blob/main/images/Screenshot%202024-11-20%20145419.png">
 
 <h2>Customizable theme color options available to set</h2>
-<img src="https://github.com/Amrutha-vm0407/Portfolio/blob/main/images/Screenshot%202024-11-20%20145501.png"
+<img src="https://github.com/Amrutha-vm0407/Portfolio/blob/main/images/Screenshot%202024-11-20%20145501.png">
 
 <h2>Skills and Abilities Page</h2>
 <img src="https://github.com/Amrutha-vm0407/Portfolio/blob/main/images/Screenshot%202024-11-20%20145609.png">
